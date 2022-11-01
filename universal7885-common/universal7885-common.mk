@@ -69,7 +69,7 @@ endif
 
 # Camera app
 PRODUCT_PACKAGES += \
-    Footej
+    Aperture
 
 # Charger
 PRODUCT_PACKAGES += \

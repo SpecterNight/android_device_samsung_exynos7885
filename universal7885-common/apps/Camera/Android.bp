@@ -1,11 +1,14 @@
 android_app_import {
+<<<<<<< HEAD
     name: "Footej",
     owner: "me",
     apk: "Footej.apk",
+=======
+    name: "Aperture",
+    owner: "LineageOS",
+    apk: "Aperture.apk",
+>>>>>>> 633809a (universal7885: camera-app: Ship Aperture instead)
     presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
     product_specific: true,
     overrides: [
         "Camera2",
