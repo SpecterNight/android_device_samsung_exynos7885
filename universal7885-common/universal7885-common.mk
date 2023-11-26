@@ -261,8 +261,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_sensorndkbridge \
-    libcorrectcamera
+    libshim_sensorndkbridge
 
 # Skip Mount
 PRODUCT_PACKAGES += \
