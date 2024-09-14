@@ -61,6 +61,6 @@ if [ -d "$FM_PATH" ]; then
 fi
 
 if [ ! -e .repo/local_manifests/eureka_deps.xml ]; then
-	git clone https://github.com/iamrh1819/local_manifests .repo/local_manifests
+	git clone https://github.com/SpecterNight/local_manifests .repo/local_manifests
 	echo "Run repo sync again"
 fi
