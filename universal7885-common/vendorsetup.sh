@@ -7,7 +7,7 @@ echo 'Cloning Kernel tree [1/6]'
 # Kernel for exynos7885
 rm -rf kernel/samsung/exynos7885
 
-git clone https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S.git -b R15_rom kernel/samsung/exynos7885
+git clone https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S.git -b R10.1_rom kernel/samsung/exynos7885
 
 echo 'Cloning Device Tree [2/6]'
 # Device tree for exynos7885
