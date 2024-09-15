@@ -19,7 +19,7 @@ cho 'Cloning Vendor Trees [3/6]'
 # Vendor blobs for exynos7885
 rm -rf vendor/samsung
 
-git clone https://github.com/eurekadevelopment/android_vendor_samsung_exynos7885.git -b android-12.1 vendor/samsung
+git clone https://github.com/SpecterNight/android_vendor_samsung_exynos7885.git -b master vendor/samsung
 
 echo 'Cloning Hardware Samsung [4/6]'
 # Hardware OSS parts for Samsung
