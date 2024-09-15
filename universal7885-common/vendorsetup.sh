@@ -23,10 +23,9 @@ git clone https://github.com/SpecterNight/android_vendor_samsung_exynos7885.git 
 
 echo 'Cloning Hardware Samsung [4/6]'
 # Hardware OSS parts for Samsung
-mv hardware/samsung/nfc .
 rm -rf hardware/samsung
 git clone https://github.com/lineageos/android_hardware_samsung -b lineage-18.1 hardware/samsung
-mv nfc hardware/samsung
+git clone https://github.com/LineageOS/android_hardware_samsung_nfc -b lineage-18.1 hardware/samsung/nfc
 
 echo 'Cloning Lineage-CP [6/6]'
 # Lineage-CP
