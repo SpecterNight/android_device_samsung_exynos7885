@@ -8,6 +8,7 @@ DTBO_DIR   := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts/exynos/dtbo
 
 DTBO_CFG := $(COMMON_PATH)/dtbo/$(TARGET_DEVICE).cfg
 
+<<<<<<< HEAD
 define build-dtboimage-target
     $(call pretty,"Target dtbo image: $(INSTALLED_DTBIMAGE_TARGET)")
     $(MKDTIMG) cfg_create $@ $(DTBO_CFG) -d $(DTBO_DIR)
@@ -16,6 +17,16 @@ endef
 
 $(INSTALLED_DTBIMAGE_TARGET): $(MKDTIMG) $(INSTALLED_KERNEL_TARGET)
 	$(build-dtboimage-target)
+=======
+INSTALLED_DTBIMAGE_TARGET := $(PRODUCT_OUT)/eureka_dtbo.img
+	
+$(INSTALLED_DTBIMAGE_TARGET): $(PRODUCT_OUT)/kernel $(MKDTIMG)
+	$(call pretty,"Target dtbo image: $(INSTALLED_DTBIMAGE_TARGET)")
+	$(hide) echo "Building eureka_dtbo.img"
+	$(MKDTIMG) cfg_create $@ $(DTBO_CFG) -d $(DTBO_DIR)
+	$(hide) $(call assert-max-image-size,$@,$(BOARD_DTBIMAGE_PARTITION_SIZE),raw)
+	$(hide) chmod a+r $@
+>>>>>>> 8c104e9 (fixup! universal7885: compile dtbo from the kernel rather than prebuilt)
 	
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
