@@ -27,6 +27,7 @@ mv hardware/samsung/nfc .
 rm -rf hardware/samsung
 git clone https://github.com/Roynas-Android-Playground/android_hardware_samsung -b lineage-18.1 hardware/samsung
 mv nfc hardware/samsung
+git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces -b lineage-18.1 hardware/samsung-ext/interfaces
 
 echo 'Cloning Lineage-CP [6/7]'
 # Lineage-CP
