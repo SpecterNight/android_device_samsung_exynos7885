@@ -41,7 +41,7 @@ git clone https://github.com/lineageos/android_hardware_samsung_slsi_scsc_wifibt
 echo 'Cloning Samsung_Slsi [7/7]'
 # SLSI Sepolicy
 rm -rf device/samsung_slsi/sepolicy
-git clone https://github.com/Roynas-Android-Playground/android_device_samsung_slsi_sepolicy -b lineage-22 device/samsung_slsi/sepolicy
+git clone https://github.com/Roynas-Android-Playground/android_device_samsung_slsi_sepolicy -b lineage-18.1 device/samsung_slsi/sepolicy
 
 echo 'Completed, Now proceeding to lunch'
 
