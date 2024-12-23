@@ -13,6 +13,8 @@ TARGET_BOARD_PLATFORM := universal7904
 TARGET_BOOTLOADER_BOARD_NAME := universal7904
 endif
 
+include hardware/samsung_slsi-linaro/config/BoardConfig7885.mk
+
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
