@@ -15,18 +15,6 @@
 # limitations under the License.
 
 import common
-
-def FullOTA_Assertions(info):
-  OTA_Assertions(info)
-  return
-
-def IncrementalOTA_Assertions(info):
-  OTA_Assertions(info)
-  return
-
-def OTA_Assertions(info):
-  # Disable VINTF checks
-  common.OPTIONS.skip_compatibility_check = True
   
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
