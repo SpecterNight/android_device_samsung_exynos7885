@@ -109,7 +109,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 BOARD_ROOT_EXTRA_FOLDERS := factory
 BOARD_ROOT_EXTRA_SYMLINKS := /factory:/efs
 
-include device/samsung_slsi/sepolicy/sepolicy.mk
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy/vendor
