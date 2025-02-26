@@ -252,6 +252,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Touch features
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung
 
