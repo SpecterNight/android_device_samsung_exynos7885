@@ -80,14 +80,16 @@ PRODUCT_PACKAGES += eklogger
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.3.vendor
 
 # Fingerprint
 TARGET_BOARD_HAS_FP ?= true
 ifeq ($(TARGET_BOARD_HAS_FP), true)
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.exynos7885
+    android.hardware.biometrics.fingerprint@2.1-service.samsung
 endif
 
 # Gatekeeper
@@ -142,7 +144,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.samsung
+    android.hardware.light@2.0-service.samsung
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -252,10 +254,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.samsung \
@@ -275,7 +273,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/samsung
+    hardware/samsung \
+    hardware/samsung/aidl/power-libperfmgr
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
@@ -286,9 +285,13 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.samsung
+    android.hardware.vibrator@1.3-service.samsung
 
 # VNDK
 PRODUCT_COPY_FILES += \
