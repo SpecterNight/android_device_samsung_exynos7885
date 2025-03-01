@@ -71,6 +71,11 @@
       <fqname>@4.0::IKeymasterDevice/default</fqname>
    </hal>
    <hal format="hidl">
+        <name>android.hardware.light</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::ILight/default</fqname>
+   </hal>
+   <hal format="hidl">
       <name>android.hardware.media.omx</name>
       <transport>hwbinder</transport>
       <fqname>@1.0::IOmx/default</fqname>
@@ -80,6 +85,11 @@
       <name>android.hardware.memtrack</name>
       <transport>hwbinder</transport>
       <fqname>@1.0::IMemtrack/default</fqname>
+   </hal>
+   <hal format="hidl">
+        <name>android.hardware.power</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPower/default</fqname>
    </hal>
    <hal format="hidl">
       <name>android.hardware.sensors</name>
@@ -103,6 +113,11 @@
       <name>android.hardware.thermal</name>
       <transport>hwbinder</transport>
       <fqname>@1.0::IThermal/default</fqname>
+   </hal>
+   <hal format="hidl">
+        <name>vendor.lineage.power</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ILineagePower/default</fqname>
    </hal>
    <hal format="hidl">
       <name>vendor.samsung.hardware.gnss</name>
